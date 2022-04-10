@@ -8,7 +8,7 @@ def set(digit: float | str, precision: int | str = 1) -> str:
 
     ```python
     >>> from setPrecision import set
-    >>> num = 3.1459 # Not necessary to set `digit` to variable.
+    >>> num = 3.1459 # Not necessary to set number as variable.
     >>> num = set(digit = num, precision = 2)
     >>> print(num)
     '3.15'
