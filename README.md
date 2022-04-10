@@ -6,6 +6,28 @@
 
 ---
 
+## Installation
+
+### Using PIP _(Recommended)_
+
+- To install `setPrecision` using `pip`, enter the following:
+
+  ```python
+  pip install setPrecision
+  ```
+
+### Manual Installation _(**NOT** Recommended)_
+
+1. Download the project from [GitHub](https://github.com/schlopp96/setPrecision) and extract to location of choice.
+
+2. Open terminal and navigate to the extracted directory `"./path/to/setPrecision"`.
+
+3. Use `pip install -r requirements.txt` to install necessary dependencies.
+
+- That's all!
+
+---
+
 ## Usage
 
 - In order to use `setPrecision`, start by importing the module to your Python environment:
@@ -28,10 +50,9 @@ from setPrecision import set
 - Both params can be entered in string format, and will output successfully assuming that both paramaters can be cast to their appropriate types.
   - This is done automatically.
 
-## Contact
+## Contact the Author
 
-- Please do not hesitate to contact me through my email address:
-  - `schloppdaddy@gmail.com`
-- Send me a message/check me out at my [GitHub profile](https://github.com/schlopp96)!
-
----
+- If you have any questions, comments, issues, complaints, etc that cannot be resolved over GitHub, please feel free to contact me:
+  - Email at: `schloppdaddy@gmail.com`.
+- Otherwise:
+  - Submit an issue through the project's [GitHub repository](https://github.com/schlopp96/setPrecision).
