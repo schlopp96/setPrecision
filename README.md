@@ -2,7 +2,7 @@
 
 ## About
 
-- `setPrecision` is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
+- _**`setPrecision`**_ is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
 
 ---
 
@@ -10,11 +10,20 @@
 
 ### Using PIP _(Recommended)_
 
-- To install `setPrecision` using `pip`, enter the following:
+> _Easiest_ method. Highly recommended over manual installation.
+
+- To install _**`setPrecision`**_ using `pip`, enter the following:
 
   ```python
   pip install setPrecision
   ```
+
+- You should now be able to import/run _**`setPrecision`**_ within your python environment by entering the following:
+
+```python
+>>> from setPrecision import set
+...
+```
 
 - Done!
 
@@ -40,7 +49,7 @@
 
 ## Usage
 
-- In order to use `setPrecision`, start by importing the module to your Python environment:
+- In order to use _**`setPrecision`**_, start by importing the module to your Python environment:
 
 ```python
 from setPrecision import set
