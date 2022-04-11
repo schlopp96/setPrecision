@@ -20,10 +20,10 @@
 
 - You should now be able to import/run _**`setPrecision`**_ within your python environment by entering the following:
 
-```python
->>> from setPrecision import set
-...
-```
+  ```python
+  >>> from setPrecision import set
+  ...
+  ```
 
 - Done!
 
@@ -37,7 +37,7 @@
 2. Install all dependencies for this package within said directory using:
 
    ```python
-   pip install -r requirements.txt
+     pip install -r requirements.txt
    ```
 
 3. Clone repository with the git client of your preference.
@@ -51,18 +51,18 @@
 
 - In order to use _**`setPrecision`**_, start by importing the module to your Python environment:
 
-```python
-from setPrecision import set
-```
+  ```python
+  from setPrecision import set
+  ```
 
 - Now, simply call the `set` method and enter your desired number to be formatted as the `digit` parameter, and the level of precision as the `precision` parameter:
 
-```python
->>> myNumber = 3.141592653589793 # Not necessary to set number as variable.
->>> myNumber = set(myNumber, 2)
->>> print(myNumber)
-'3.15'
-```
+  ```python
+  >>> myNumber = 3.141592653589793 # Not necessary to set number as variable.
+  >>> myNumber = set(myNumber, 2)
+  >>> print(myNumber)
+  '3.15'
+  ```
 
 > Note that the output is automatically rounded up when `digit >= 5`, and down when `digit < 5`.
 
