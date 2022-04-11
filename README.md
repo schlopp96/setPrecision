@@ -10,11 +10,20 @@
 
 ### Using PIP _(Recommended)_
 
+> _Easiest_ method. Highly recommended over manual installation.
+
 - To install `setPrecision` using `pip`, enter the following:
 
   ```python
   pip install setPrecision
   ```
+
+- You should now be able to import/run _**`setPrecision`**_ within your python environment by entering the following:
+
+```python
+>>> from setPrecision import set
+...
+```
 
 - Done!
 
