@@ -1,8 +1,8 @@
-# setPrecision
+# SetPrecision
 
 ## About
 
-- _**`setPrecision`**_ is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
+- _**`SetPrecision`**_ is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
 
 ---
 
@@ -12,16 +12,16 @@
 
 > _Easiest_ method. Highly recommended over manual installation.
 
-- To install _**`setPrecision`**_ using `pip`, enter the following:
+- To install _**`SetPrecision`**_ using `pip`, enter the following:
 
   ```python
-  pip install setPrecision
+  pip install SetPrecision
   ```
 
-- You should now be able to import/run _**`setPrecision`**_ within your python environment by entering the following:
+- You should now be able to import/run _**`SetPrecision`**_ within your python environment by entering the following:
 
   ```python
-  >>> from setPrecision import set
+  >>> from SetPrecision import set
   ...
   ```
 
@@ -49,10 +49,10 @@
 
 ## Usage
 
-- In order to use _**`setPrecision`**_, start by importing the module to your Python environment:
+- In order to use _**`SetPrecision`**_, start by importing the module to your Python environment:
 
   ```python
-  from setPrecision import set
+  from SetPrecision import set
   ```
 
 - Now, simply call the `set` method and enter your desired number to be formatted as the `digit` parameter, and the level of precision as the `precision` parameter:
@@ -73,5 +73,5 @@
 
 ## Contact the Author
 
-- If you have any questions, comments, or concerns that cannot be alleviated through the [project's GitHub repository](https://github.com/schlopp96/setPrecision), please feel free to contact me through my email address:
+- If you have any questions, comments, or concerns that cannot be alleviated through the [project's GitHub repository](https://github.com/schlopp96/SetPrecision), please feel free to contact me through my email address:
   - `schloppdaddy@gmail.com`

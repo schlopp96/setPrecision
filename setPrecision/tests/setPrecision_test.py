@@ -1,4 +1,4 @@
-from ..setPrecision import set
+from ..SetPrecision import set
 
 
 def test_setPrecisionA() -> None:

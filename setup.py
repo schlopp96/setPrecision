@@ -4,11 +4,11 @@ from setuptools import setup, find_packages
 readme = pathlib.Path("readme.md").read_text()
 reqs = pathlib.Path("requirements.txt").read_text()
 setup(
-    name="setPrecision",
+    name="SetPrecision",
     version="0.1.0",
     description=
-    "`setPrecision` is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of significant digits.",
-    url='https://github.com/schlopp96/setPrecision',
+    "`SetPrecision` is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of significant digits.",
+    url='https://github.com/schlopp96/SetPrecision',
     author='schlopp96',
     author_email='schloppdaddy@gmail.com',
     long_description=readme,
@@ -31,7 +31,7 @@ setup(
         "Topic :: Utilities",
     ],
     keywords=[
-        'setPrecision', 'float', 'decimal', 'precision', 'sig', 'figs',
+        'SetPrecision', 'float', 'decimal', 'precision', 'sig', 'figs',
         'significant', 'digits', 'scientific', 'notation', 'math',
         'conversion', 'script', 'point', 'floating'
     ])

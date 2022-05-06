@@ -7,7 +7,7 @@ def set(digit: float | str, precision: int | str = 1) -> str:
     Example:
 
     ```python
-    >>> from setPrecision import set
+    >>> from SetPrecision import set
     >>> num = 3.1459 # Not necessary to set number as variable.
     >>> num = set(digit = num, precision = 2)
     >>> print(num)
