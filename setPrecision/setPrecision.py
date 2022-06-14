@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 def set(digit: float | str, precision: int | str = 1) -> str | Exception:
-    """Returns a string representation of a number `digit` formatted to the given precision of `precision` significant digits.
+    """Returns a string representation of a number :float:`digit` formatted to the given precision of :int:`precision` significant digits.
 
     Example:
 
