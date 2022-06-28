@@ -1,1 +1,1 @@
-from .SetPrecision import set
+from .SetPrecision import set_precision

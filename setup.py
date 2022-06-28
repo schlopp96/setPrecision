@@ -5,9 +5,9 @@ readme = pathlib.Path("readme.md").read_text()
 reqs = pathlib.Path("requirements.txt").read_text()
 setup(
     name="SetPrecision",
-    version="0.1.0",
+    version="0.2.0",
     description=
-    "`SetPrecision` is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of significant digits.",
+    "Python module providing an easy way to set the precision of a floating-point number/decimal to the desired amount of significant figures.",
     url='https://github.com/schlopp96/SetPrecision',
     author='schlopp96',
     author_email='schloppdaddy@gmail.com',
@@ -31,7 +31,20 @@ setup(
         "Topic :: Utilities",
     ],
     keywords=[
-        'SetPrecision', 'float', 'decimal', 'precision', 'sig', 'figs',
-        'significant', 'digits', 'scientific', 'notation', 'math',
-        'conversion', 'script', 'point', 'floating'
+        'SetPrecision',
+        'float',
+        'decimal',
+        'precision',
+        'sig',
+        'figs',
+        'significant',
+        'digits',
+        'scientific',
+        'notation',
+        'math',
+        'conversion',
+        'script',
+        'point',
+        'floating',
+        'scientific-notation',
     ])

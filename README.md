@@ -15,7 +15,7 @@
 - To install _**`SetPrecision`**_ using `pip`, enter the following:
 
   ```python
-  pip install SetPrecision
+  python -m pip install SetPrecision
   ```
 
 - Done!
@@ -28,15 +28,19 @@
 
 1. Before use, navigate to intended installation location, and create a new directory.
 
-2. Clone repository with the git client of your preference.
+2. Clone repository with the git client of your preference using the following command:
+
+   - ```bash
+     git clone https://github.com/schlopp96/SetPrecision/releases/latest
+     ```
 
 3. Install all dependencies for this package within said directory using:
 
-   ```text
+   - ```bash
      pip install -r requirements.txt
-   ```
+     ```
 
-   - (Optional) move installation directory to `"path/to/Python/Libs/site_packages"` to be able to import this package to a Python program like any other importable package.
+- **(Optional)**: move installation directory to `"path/to/Python/Libs/site_packages"` to be able to import this package to a Python program like any other importable package.
 
 - Done!
 
@@ -47,16 +51,16 @@
 - In order to use _**`SetPrecision`**_, start by importing the module to your Python environment:
 
   ```python
-  from SetPrecision import set
+  from SetPrecision import set_precision
   ```
 
-- Now, simply call the `set` method and enter your desired number to be formatted as the `digit` parameter, and the level of precision as the `precision` parameter:
+- Now, simply call the `set_precision` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
 
   ```python
 
   >>> testA = 3.141592653589793 # Not necessary to set number as variable.
 
-  >>> testA = set(testA, 2)
+  >>> testA = set_precision(testA, 2)
 
   >>> print(testA)
 
@@ -64,16 +68,16 @@
 
   >>> testB = 3.141592653589793
 
-  >>> testB = set(testB, 4)
+  >>> testB = set_precision(testB, 4)
 
   >>> print(testB)
 
   '3.1416'
   ```
 
-> Note that the output is automatically rounded up when `digit >= 5`, and down when `digit < 5`.
+> Note that the output is automatically rounded up when `number >= 5`, and down when `number < 5`.
 
-- Both params can be entered in string format, and will output successfully assuming that both paramaters can be cast to their appropriate types.
+- Both params can be entered in string format, and will output successfully assuming that both parameters can be cast to their appropriate types.
   - This is done automatically.
 
 ---
