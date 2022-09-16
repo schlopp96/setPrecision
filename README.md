@@ -2,7 +2,9 @@
 
 ## About
 
-- _**`SetPrecision`**_ is a small module providing a simple way to set the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
+- _**`SetPrecision`**_ is a small module containing two methods:
+  - `set_precision`: sets the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
+  - `set_sigfigs`: sets the _total_ amount of desired significant digits in a given value.
 
 ---
 
@@ -26,21 +28,21 @@
 
 > _Not_ recommended.
 
-1. Before use, navigate to intended installation location, and create a new directory.
+1. Before use, navigate to the intended installation location, and create a new directory.
 
-2. Clone repository with the git client of your preference using the following command:
+2. Clone the repository with the git client of your preference using the following command:
 
    - ```bash
      git clone https://github.com/schlopp96/SetPrecision/releases/latest
      ```
 
-3. Install all dependencies for this package within said directory using:
+3. Install all dependencies for this package using the following command within the directory:
 
    - ```bash
      pip install -r requirements.txt
      ```
 
-- **(Optional)**: move installation directory to `"path/to/Python/Libs/site_packages"` to be able to import this package to a Python program like any other importable package.
+- **(Optional)**: move the installation directory to `"path/to/Python/Libs/site_packages"` to be able to import this package to a Python program like any other importable package.
 
 - Done!
 
@@ -48,36 +50,64 @@
 
 ## Usage
 
-- In order to use _**`SetPrecision`**_, start by importing the module to your Python environment:
+- To use _**`SetPrecision`**_, start by importing the module to your Python environment:
 
-  ```python
-  from SetPrecision import set_precision
-  ```
+- For `set_precision`:
 
-- Now, simply call the `set_precision` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
+  - ```python
+      from SetPrecision import set_precision
+    ```
 
-  ```python
+  - Now, simply call the `set_precision` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
 
-  >>> testA = 3.141592653589793 # Not necessary to set number as variable.
+    ```python
 
-  >>> testA = set_precision(testA, 2)
+    >>> testA = 3.141592653589793 # Not necessary to set number as variable.
 
-  >>> print(testA)
+    >>> testA = set_precision(testA, 3)
 
-  '3.15'
+    >>> print(testA)
 
-  >>> testB = 3.141592653589793
+    '3.156'
 
-  >>> testB = set_precision(testB, 4)
+    >>> testB = 3.141592653589793
 
-  >>> print(testB)
+    >>> testB = set_precision(testB, 5)
 
-  '3.1416'
-  ```
+    >>> print(testB)
 
-> Note that the output is automatically rounded up when `number >= 5`, and down when `number < 5`.
+    '3.14159`
+    ```
 
-- Both params can be entered in string format, and will output successfully assuming that both parameters can be cast to their appropriate types.
+- For `set_sigfigs`:
+
+  - ```python
+    from SetPrecision import set_sigfigs
+    ```
+
+  - Now, simply call the `set_sigfigs` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
+
+  - ```python
+    >>> testA = 3.141592653589793 # Not necessary to set number as variable.
+
+    >>> testA = set_sigfigs(testA, 3)
+
+    >>> print(testA)
+
+    '3.15'
+
+    >>> testB = 3.141592653589793
+
+    >>> testB = set_sigfigs(testB, 5)
+
+    >>> print(testB)
+
+    '3.1416`
+    ```
+
+- Note that the output is automatically rounded up when `number >= 5`, and down when `number < 5` in both cases.
+
+- Both params can be entered in string format and will output successfully assuming that both parameters can be cast to their appropriate types.
   - This is done automatically.
 
 ---
