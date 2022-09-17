@@ -2,8 +2,10 @@
 
 ## About
 
-- _**`SetPrecision`**_ is a small module containing two methods:
+- _**`SetPrecision`**_ is a small module containing two methods centered around decimal precision and significant figures:
+  
   - `set_precision`: sets the precision of a floating point number or decimal to the desired amount of digits following the decimal point.
+  
   - `set_sigfigs`: sets the _total_ amount of desired significant digits in a given value.
 
 ---
@@ -50,69 +52,68 @@
 
 ## Usage
 
-- To use _**`SetPrecision`**_, start by importing the module to your Python environment:
-
-- For `set_precision`:
+- Start by importing the `SetPrecision` module to your Python environment:
 
   - ```python
-      from SetPrecision import set_precision
+    import SetPrecision as sp
     ```
 
-  - Now, simply call the `set_precision` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
+### Using `SetPrecision.set_precision`
 
-    ```python
+- Call the `set_precision` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
 
-    >>> testA = 3.141592653589793 # Not necessary to set number as variable.
+    - ```python
 
-    >>> testA = set_precision(testA, 3)
+      >>> testA = 3.141592653589793 # Not necessary to set number as variable.
 
-    >>> print(testA)
+      >>> testA = sp.set_precision(number=testA, precision=3)
 
-    '3.156'
+      >>> print(testA)
 
-    >>> testB = 3.141592653589793
+      3.142
 
-    >>> testB = set_precision(testB, 5)
+      >>> testB = 3.141592653589793
 
-    >>> print(testB)
+      >>> testB = sp.set_precision(number=testB, precision=5)
 
-    '3.14159`
-    ```
+      >>> print(testB)
 
-- For `set_sigfigs`:
+      3.14159
+      ```
 
-  - ```python
-    from SetPrecision import set_sigfigs
-    ```
+---
 
-  - Now, simply call the `set_sigfigs` method and enter your desired number to be formatted as the `number` parameter, and the level of precision as the `precision` parameter:
+### Using `SetPrecision.set_sigfigs`
+
+- Call the `set_sigfigs` method and enter your desired number to be formatted as the `number` parameter, and the desired number of significant figures as the `precision` parameter:
 
   - ```python
     >>> testA = 3.141592653589793 # Not necessary to set number as variable.
 
-    >>> testA = set_sigfigs(testA, 3)
+    >>> testA = sp.set_sigfigs(number=testA, precision=3)
 
     >>> print(testA)
 
-    '3.15'
+    3.15
 
     >>> testB = 3.141592653589793
 
-    >>> testB = set_sigfigs(testB, 5)
+    >>> testB = sp.set_sigfigs(number=testB, precision=5)
 
     >>> print(testB)
 
-    '3.1416`
+    3.1416
     ```
 
-- Note that the output is automatically rounded up when `number >= 5`, and down when `number < 5` in both cases.
+- Note that the output is automatically rounded up when `number >= 5`, and down when `number < 5` in both examples.
 
-- Both params can be entered in string format and will output successfully assuming that both parameters can be cast to their appropriate types.
-  - This is done automatically.
+- Both params can be filled in with string values and will still output successfully assuming that both parameters can be cast to their appropriate types; this is done automatically.
 
 ---
 
 ## Contact the Author
 
-- If you have any questions, comments, or concerns that cannot be alleviated through the [project's GitHub repository](https://github.com/schlopp96/SetPrecision), please feel free to contact me through my email address:
+- If you notice any bugs or issues that need to be addressed, please submit your findings to the [issues](https://github.com/schlopp96/SetPrecision/issues) tab.
+
+- If you have any questions, comments, or concerns that _cannot_ be alleviated through the project's [GitHub repository](https://github.com/schlopp96/SetPrecision), please feel free to contact me through my email address:
   - `schloppdaddy@gmail.com`
