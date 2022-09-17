@@ -5,7 +5,7 @@ from math import floor, log10
 
 
 def set_sigfigs(number: float | str, precision: int | str = 1) -> float | int:
-    """Set number of significant figures :param:`precision` in given value :param:`number`.
+    """Format value to contain given number of significant digits.
 
     Example:
 
@@ -18,11 +18,11 @@ def set_sigfigs(number: float | str, precision: int | str = 1) -> float | int:
 
     ---
 
-    :param number: starting value. Can be either :class:`str` or :class:`float` type.
+    :param number: value to be formatted, can be entered as either a :class:`str` or :class:`float` type
     :type number: :class:`float` | :class:`str`
-    :param precision: total significant figures to be assigned to starting value :param:`number`. Will attempt to convert :class:`str` to :class:`int`, defaults to 1
+    :param precision: total significant figures for value :param:`number` to contain, attempts to convert :class:`str` to :class:`int`, defaults to 1
     :type precision: :class:`int` | :class:`str`, optional
-    :return: value with matching specified amount :param:`precision` of significant figures.
+    :return: value formatted to contain specified amount of significant figures
     :rtype: :class:`float` | :class:`int`
     """
 
@@ -37,7 +37,7 @@ def set_sigfigs(number: float | str, precision: int | str = 1) -> float | int:
 
 
 def set_precision(number: float | str, precision: int | str = 2) -> float:
-    """Returns floating-point digit :param:`number` formatted with given amount :param:`precision` of decimal places.
+    """Format value to contain given amount of decimal places.
 
     Example:
 
@@ -50,11 +50,11 @@ def set_precision(number: float | str, precision: int | str = 2) -> float:
 
     ---
 
-    :param number: float/decimal to be formatted, attempts to convert :class:`str` to :class:`float`
+    :param number: value to be formatted, can be entered as either a :class:`float` or :class:`str` type
     :type number: :class:`float` | :class:`str`
-    :param precision: number of decimal places to which :param:`number` is set to contain. Will attempt to convert strings to integers, defaults to 1
+    :param precision: number of decimal places for value :param:`number` to contain, attempts to convert :class:`str` to :class:`int`, defaults to 2
     :type precision: :class:`int` | :class:`str`, optional
-    :return: float/decimal :param:`number` with given number of decimal places :param:`decimals`.
+    :return: value formatted to contain specified amount of decimal places.
     :rtype: :class:`float`
     """
 
@@ -66,6 +66,3 @@ def set_precision(number: float | str, precision: int | str = 2) -> float:
 
     except Exception as exc:
         return exc.args[0]
-
-print(set_sigfigs(3.15625, 3))
-print(set_precision(3.15625, 3))
